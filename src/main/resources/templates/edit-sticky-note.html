@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"  layout:decorate="layout/main">
+<head>
+    <meta charset="UTF-8" >
+    <title>Title</title>
+</head>
+<body>
+    <div layout:fragment="page-name">
+        Edit Note
+    </div>
+    <div layout:fragment="content">
+        <div class="row">
+            <h4>Add New Sticky Note</h4>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="sticky_note_name">Sticky Note Name</label>
+                    <input type="text" class="form-control" id="sticky_note_name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="sticky_note_description">Sticky Note Description</label>
+                    <input type="text" class="form-control" id="sticky_note_description" name="description">
+                </div>
+                <div class="form-group">
+                    <label for="sticky_note_color">Color </label>
+                    <select name="color" class="form-control" id="sticky_note_color">
+                        <option value="lightblue">Blue</option>
+                        <option value="lightpink">Pink</option>
+                        <option value="antiquewhite">Antique White</option>
+                        <option value="lightgreen"> Green</option>
+                    </select>
+
+                    <label for="sticky_note_color">Status </label>
+                    <select name="color" class="form-control" id="Status">
+                        <option value="enables">Enabled </option>
+                        <option value="desabled">Desabled</option>
+
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
